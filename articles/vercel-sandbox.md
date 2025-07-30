@@ -2,8 +2,8 @@
 title: "Vercel Sandboxの紹介"
 emoji: "🏝️"
 type: "tech"
-topics: ["Vercel", "Sandbox", "Nodejs", "Python"]
-published: false
+topics: ["Vercel", "Sandbox", "Nodejs"]
+published: true
 publication_name: "romanark"
 ---
 
