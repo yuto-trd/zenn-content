@@ -70,8 +70,7 @@ package.json
     "@daytonaio/sdk": "^0.108.0"
   },
   "devDependencies": {
-    "@types/node": "^24.7.0",
-    "tsx": "^4.20.6"
+    "@types/node": "^24.7.0"
   }
 }
 ```
@@ -139,3 +138,52 @@ console.log(`Session completed with exit code: ${result.exitCode}`);
 // 後片付け
 await sandbox.delete();
 ```
+
+次に上記のコードを実行します。
+```bash
+npx tsx index.ts
+```
+
+実行すると、以下のようなログが出力されます。
+```
+npm create を実行中...
+npm warn exec The following package was not found and will be installed: create-hono@0.19.2
+
+> npx
+> "create-hono" ./my-app --template nodejs --install --pm npm
+
+create-hono version 0.19.2
+✔ Using target directory … ./my-app
+- Cloning the template
+✔ Cloning the template
+- Installing project dependencies
+✔ Installing project dependencies
+🎉 Copied project files
+Get started with: cd ./my-app
+npm notice
+npm notice New minor version of npm available! 11.4.2 -> 11.6.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+npm notice To update run: npm install -g npm@11.6.1
+npm notice
+
+ビルドを実行中...
+
+> build
+> tsc
+
+
+プレビューリンク: https://3000-{sandbox_id}.proxy.daytona.works
+プレビュートークン: 🤫
+対話型セッションを開始しました。Ctrl+C exit で終了します。
+npm run start
+%                                                                                                                                                          
+sandbox_id% npm run start
+
+> start
+> node dist/index.js
+
+Server is running on http://localhost:3000
+```
+
+この状態で、ブラウザからプレビューリンクにアクセスすると、以下のような画面が表示されます。
+![Honoのデフォルト画面](/images/daytona-intro/hono-default.png)
