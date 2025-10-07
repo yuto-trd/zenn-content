@@ -12,7 +12,7 @@ published: false
 例えば、Code InterpreterやVibe Coding用のWebサービス（Lovable, Replit）などのケースがあります。
 今回はそういったサービスを展開する上で重要なレイヤーであるサンドボックス環境を簡単に使うことができるDaytonaというサービスを紹介します。
 
-@[card](https://daytona.run/)
+@[card](https://daytona.io/)
 
 ## Daytonaとは？
 
